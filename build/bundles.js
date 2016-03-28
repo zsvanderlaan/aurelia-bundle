@@ -9,19 +9,7 @@ module.exports = {
       "options": {
         "inject": true,
         "minify": true,
-        "depCache": true,
-        "rev": false
-      }
-    },
-    "dist/common/lib": {
-      "includes": [
-        "jquery",
-        "bootstrap"
-      ],
-      "options": {
-        "inject": true,
-        "minify": false,
-        "depCache": true,
+        "depCache": false,
         "rev": false
       }
     },
@@ -33,8 +21,8 @@ module.exports = {
       ],
       "options": {
         "inject": true,
-        "minify": true,
-        "depCache": true,
+        "minify": false,
+        "depCache": false,
         "rev": false
       }
     },
@@ -46,8 +34,8 @@ module.exports = {
       ],
       "options": {
         "inject": true,
-        "minify": true,
-        "depCache": true,
+        "minify": false,
+        "depCache": false,
         "rev": false
       }
     },
@@ -64,8 +52,7 @@ module.exports = {
         "aurelia-templating-router",
         "aurelia-loader-default",
         "aurelia-history-browser",
-        "aurelia-logging-console",
-        "bootstrap/css/bootstrap.css!text"
+        "aurelia-logging-console"
       ],
       "options": {
         "inject": true,

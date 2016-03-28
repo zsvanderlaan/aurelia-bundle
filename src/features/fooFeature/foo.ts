@@ -1,3 +1,18 @@
+import 'jquery-legacy';
+
 export class foo {
-  name: string = 'Welcome to Foo Feature';
+
+  fooStatus:string = 'Testing...';
+
+  constructor() {
+    console.log('debug foo');
+
+    let success = (
+      typeof $ !== 'undefined'
+      && typeof $.fn !== 'undefined'
+      && typeof $.fn.modal === 'undefined'
+    );
+
+    this.fooStatus = success.toString();
+  }
 }
