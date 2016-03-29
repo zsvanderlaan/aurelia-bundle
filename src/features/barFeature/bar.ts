@@ -1,8 +1,7 @@
 import 'bootstrap.js';
 
 export class bar {
-
-  $: any;
+  
   barStatus: string = 'Testing...';
 
   constructor() {
